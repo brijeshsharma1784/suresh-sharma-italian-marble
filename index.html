@@ -4,44 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Suresh Sharma – Granite & Italian Marble Specialist</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    body {
-      background-color: #f9f9f9;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .hero-name {
-      font-size: 3rem;
-      font-weight: 700;
-      color: #2b2b2b;
-    }
-    .subtitle {
-      font-size: 1.2rem;
-      margin: 10px 0 20px;
-    }
-    .btn-custom {
-      margin: 10px;
-    }
-    .hero-img {
-      max-width: 100%;
-      max-height: 400px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
-<body>
-  <h1 class="hero-name">Suresh Sharma</h1>
-  <p class="subtitle">Granite & Italian Marble Specialist – Bangalore</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between">
+      <div class="text-xl font-semibold">Suresh Sharma</div>
+      <div class="space-x-4 hidden sm:block">
+        <a href="#about" class="text-gray-600 hover:text-black">About</a>
+        <a href="#gallery" class="text-gray-600 hover:text-black">Gallery</a>
+        <a href="#quotation" class="text-gray-600 hover:text-black">Quotation</a>
+        <a href="#contact" class="text-gray-600 hover:text-black">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-  <img src="images/WhatsApp Image 2025-06-02 at 1.06.31 PM.jpeg" alt="Granite work" class="hero-img">
+  <!-- Hero Section -->
+  <section class="text-center py-16 bg-gradient-to-br from-gray-200 to-white">
+    <h1 class="text-4xl font-bold mb-4">Suresh Sharma</h1>
+    <p class="text-xl italic mb-2">“Good work is the only advertising we need.”</p>
+    <p class="text-gray-700">Granite & Italian Marble Specialist – Bangalore • 30+ Years of Experience</p>
+  </section>
 
-  <div class="mt-4">
-    <a href="gallery.html" class="btn btn-primary btn-custom">View Gallery</a>
-    <a href="quotation.html" class="btn btn-warning btn-custom">Quotation</a>
-    <a href="contact.html" class="btn btn-success btn-custom">Contact</a>
-  </div>
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-4 text-center">About</h2>
+    <p class="text-gray-700 text-center">
+      Based in Bangalore, Suresh Sharma has spent over 30 years perfecting the craft of granite and Italian marble installation.
+      From flooring to countertops and wall cladding, his projects combine durability with timeless elegance. 
+      Trusted by homeowners, builders, and designers alike.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="bg-gray-100 py-12">
+    <h2 class="text-2xl font-bold text-center mb-8">Gallery</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <!-- Sample 5 photos shown below. Replace/add up to 20 images -->
+      <img src="images/WhatsApp Image 2025-06-02 at 1.06.31 PM.jpeg" class="rounded shadow" alt="">
+      <img src="images/WhatsApp Image 2025-06-02 at 1.06.21 PM.jpeg" class="rounded shadow" alt="">
+      <img src="images/WhatsApp Image 2025-06-02 at 1.05.49 PM.jpeg" class="rounded shadow" alt="">
+      <img src="images/WhatsApp Image 2025-06-02 at 1.05.34 PM.jpeg" class="rounded shadow" alt="">
+      <img src="images/WhatsApp Image 2025-06-02 at 1.05.11 PM.jpeg" class="rounded shadow" alt="">
+      <!-- Add more from your 20-image collection -->
+    </div>
+  </section>
+
+  <!-- Quotation -->
+  <section id="quotation" class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-center mb-4">Quotation</h2>
+    <p class="text-center text-gray-700 mb-4">Granite Flooring starts at ₹60/sq.ft<br>Italian Marble Polishing from ₹160/sq.ft</p>
+    <div class="text-center">
+      <a href="https://wa.me/919448711784?text=Hi%20Suresh%20ji%2C%20I%27m%20interested%20in%20a%20granite%20quotation." 
+         class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded">
+        Request a Quote on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 py-12">
+    <h2 class="text-2xl font-bold text-center mb-4">Contact</h2>
+    <p class="text-center text-gray-700 mb-2">📍 Mariannapalya, Bangalore</p>
+    <div class="text-center">
+      <a href="https://wa.me/919448711784" 
+         class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded">
+        Message on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Suresh Sharma. All Rights Reserved.
+  </footer>
 </body>
 </html>
