@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Suresh Sharma | Italian Marble & Granite Contractor</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suresh Sharma | Italian Marble & Granite</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-bg { background-image: url('images/banner.jpg'); background-size: cover; background-position: center; }
+  </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body class="bg-gray-900 text-white font-sans">
 
-  <!-- Hero -->
-  <section class="bg-cover bg-center h-[80vh]" style="background-image:url('images/banner.jpg')">
-    <div class="h-full bg-black bg-opacity-60 flex flex-col items-center justify-center text-center px-4">
-      <h1 class="text-yellow-300 text-5xl font-bold mb-2">Crafting Excellence in Marble</h1>
-      <p class="text-xl mb-4 max-w-2xl">Professional Installation of Italian Marble & Granite for Luxury Homes in Bengaluru</p>
-      <a href="#contact" class="px-6 py-3 bg-green-600 text-white rounded hover:bg-green-700">Request Quote via WhatsApp</a>
+  <!-- Navbar -->
+  <header class="fixed w-full bg-gray-800 z-10 shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-yellow-400">Suresh Sharma</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#about" class="hover:text-yellow-300">About</a>
+        <a href="#services" class="hover:text-yellow-300">Services</a>
+        <a href="#projects" class="hover:text-yellow-300">Projects</a>
+        <a href="#contact" class="hover:text-yellow-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg h-screen flex items-center justify-center text-center px-4">
+    <div class="bg-black bg-opacity-60 p-8 rounded">
+      <h2 class="text-4xl font-bold text-yellow-300 mb-4">Italian Marble & Granite Specialist</h2>
+      <p class="max-w-2xl mx-auto text-lg">30+ Years of Experience in Premium Stone Installation for Luxury Homes & Villas</p>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="py-16 px-4 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-4">About Us</h2>
-    <p class="text-gray-300 leading-relaxed">
-      With over 30 years of hands-on experience, we deliver flawless Italian marble and granite installations. Working closely with architects, builders, and homeowners, we ensure every project meets the highest standards of quality, durability, and aesthetics.
-      <br><br>
-      We specialize in site-precision installation, help source premium materials, and execute turnkey contracts on request — combining craftsmanship and convenience.
-    </p>
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+    <img src="images/pic1.jpeg" alt="About" class="w-full md:w-1/2 rounded shadow">
+    <div class="md:w-1/2">
+      <h3 class="text-3xl font-bold text-yellow-400 mb-4">About Us</h3>
+      <p class="text-gray-300 leading-relaxed">
+        We specialize in high-end Italian marble and granite installation. From site prep to finishing, our team delivers unmatched quality, whether it's a villa, penthouse, or commercial space.
+        <br><br>
+        While we don't sell materials, we can assist in sourcing and offer full turnkey installation services on request.
+      </p>
+    </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="bg-gray-800 py-16 px-4">
-    <h2 class="text-3xl font-bold text-center text-yellow-300 mb-8">Our Services</h2>
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-800 py-16 px-6">
+    <h3 class="text-3xl font-bold text-center text-yellow-300 mb-10">Our Services</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
       <div class="bg-gray-700 p-6 rounded shadow text-center">
-        <h3 class="text-lg font-semibold text-yellow-200 mb-2">Italian Marble Installation</h3>
-        <p>Expert grading, leveling, and polishing of luxury marble including Statuario, Carrara, and Botticino.</p>
+        <h4 class="text-lg font-semibold text-yellow-200 mb-2">Italian Marble Installation</h4>
+        <p>Statuario, Carrara, Botticino & more installed with flawless polish & leveling.</p>
       </div>
       <div class="bg-gray-700 p-6 rounded shadow text-center">
-        <h3 class="text-lg font-semibold text-yellow-200 mb-2">Granite & Stone Work</h3>
-        <p>Precise placement of granite, Kota, and Jaisalmer stones for floorings, steps, and outdoor areas.</p>
+        <h4 class="text-lg font-semibold text-yellow-200 mb-2">Granite & Kota Stone</h4>
+        <p>Heavy-duty natural stone floors & stairs for long-lasting durability.</p>
       </div>
       <div class="bg-gray-700 p-6 rounded shadow text-center">
-        <h3 class="text-lg font-semibold text-yellow-200 mb-2">Turnkey Projects</h3>
-        <p>End-to-end service for select clients — sourcing materials and installing with full project oversight.</p>
-      </div>
-      <div class="bg-gray-700 p-6 rounded shadow text-center">
-        <h3 class="text-lg font-semibold text-yellow-200 mb-2">Bathroom & Kitchen Work</h3>
-        <p>Elegant tile and marble layouts with waterproofing and slope design for wet areas.</p>
-      </div>
-      <div class="bg-gray-700 p-6 rounded shadow text-center">
-        <h3 class="text-lg font-semibold text-yellow-200 mb-2">Wall & Pillar Cladding</h3>
-        <p>Stylish interior & exterior cladding using marble slabs for feature walls and pillars.</p>
-      </div>
-      <div class="bg-gray-700 p-6 rounded shadow text-center">
-        <h3 class="text-lg font-semibold text-yellow-200 mb-2">Staircase Installations</h3>
-        <p>Precision-cut, anti-slip marble steps that blend safety and luxury.</p>
+        <h4 class="text-lg font-semibold text-yellow-200 mb-2">Complete Projects</h4>
+        <p>Full-service installation: material sourcing + labor for select high-end jobs.</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects Gallery -->
-  <section id="projects" class="py-16 px-4">
-    <h2 class="text-3xl font-bold text-center text-yellow-300 mb-8">Our Projects</h2>
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-6">
+    <h3 class="text-3xl font-bold text-center text-yellow-300 mb-10">Project Showcase</h3>
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-6xl mx-auto">
       <img src="images/pic1.jpeg" alt="Project 1" class="rounded shadow" />
       <img src="images/pic2.jpeg" alt="Project 2" class="rounded shadow" />
@@ -68,22 +74,28 @@
       <img src="images/pic4.jpeg" alt="Project 4" class="rounded shadow" />
       <img src="images/pic5.jpeg" alt="Project 5" class="rounded shadow" />
       <img src="images/pic6.jpeg" alt="Project 6" class="rounded shadow" />
-      <!-- add more as needed -->
+      <img src="images/pic7.jpeg" alt="Project 7" class="rounded shadow" />
+      <img src="images/pic8.jpeg" alt="Project 8" class="rounded shadow" />
+      <img src="images/pic9.jpeg" alt="Project 9" class="rounded shadow" />
+      <img src="images/pic10.jpeg" alt="Project 10" class="rounded shadow" />
+      <img src="images/pic11.jpeg" alt="Project 11" class="rounded shadow" />
+      <img src="images/pic12.jpeg" alt="Project 12" class="rounded shadow" />
+      <img src="images/pic13.jpeg" alt="Project 13" class="rounded shadow" />
+      <img src="images/pic14.jpeg" alt="Project 14" class="rounded shadow" />
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="bg-gray-900 py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-yellow-300">Contact Us</h2>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-900 py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold text-yellow-300 mb-4">Contact</h3>
     <p class="text-gray-300 mb-2">📍 56/11, 1st Cross, Mother Teresa Main Rd, Hebbal, Bengaluru</p>
-    <p class="text-gray-300 mb-4">📱 WhatsApp to request a quote</p>
-    <a href="https://wa.me/919448711784?text=Hi%20Suresh%2C%20I%E2%80%99m%20interested%20in%20installation%20of%20Italian%20marble%20with%20material%20assistance." class="px-6 py-3 bg-green-600 text-white rounded hover:bg-green-700">Message on WhatsApp</a>
+    <p class="text-gray-300 mb-4">📞 +91 94487 11784</p>
+    <a href="https://wa.me/919448711784?text=Hi%20Suresh%2C%20please%20share%20quotation%20for%20Italian%20marble." class="px-6 py-3 bg-green-600 text-white rounded hover:bg-green-700 inline-block">Message on WhatsApp</a>
   </section>
 
   <!-- Footer -->
   <footer class="bg-black text-gray-500 text-center py-6">
-    <p>© 2025 Suresh Sharma Marble Contractor</p>
-    <p>Designed and Installed in Bengaluru</p>
+    © 2025 Suresh Sharma | Marble Installation | Bengaluru
   </footer>
 
 </body>
